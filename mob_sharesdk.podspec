@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # 核心模块
     s.subspec 'ShareSDK' do |sp|
         sp.vendored_frameworks = 'ShareSDK/ShareSDK.framework','ShareSDK/Support/Required/ShareSDKConnector.framework'
-        sp.source_files = 'ShareSDK/ShareSDK.framework/**/*'
+        sp.source_files = 'ShareSDK/ShareSDK.framework/Headers/**/*'
         sp.resource_bundles = {
            'ShareSDK' => ['ShareSDK/Support/Required/ShareSDK.bundle/*.lproj','ShareSDK/Support/Required/ShareSDK.bundle/ScriptCore/*.js']
         }
