@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.frameworks       = 'JavaScriptCore'
   s.libraries        = 'sqlite3'
   s.default_subspecs = 'ShareSDK'
+  s.static_framework = true
   s.dependency 'MOBFoundation','>= 3.2.9'
   
 
